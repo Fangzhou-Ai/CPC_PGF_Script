@@ -1,0 +1,585 @@
+@article{Fastmag,
+    author = {Chang, R. and Li, S. and Lubarda, M. V. and Livshitz, B. and Lomakin, V.},
+    title = "{FastMag: Fast micromagnetic simulator for complex magnetic structures (invited)}",
+    journal = {Journal of Applied Physics},
+    volume = {109},
+    number = {7},
+    pages = {07D358},
+    year = {2011},
+    month = {04},
+    abstract = "{A fast micromagnetic simulator (FastMag) for general problems is presented. FastMag solves the Landau–Lifshitz–Gilbert equation and can handle multiscale problems with a high computational efficiency. The simulator derives its high performance from efficient methods for evaluating the effective field and from implementations on massively parallel graphics processing unit (GPU) architectures. FastMag discretizes the computational domain into tetrahedral elements and therefore is highly flexible for general problems. The magnetostatic field is computed via the superposition principle for both volume and surface parts of the computational domain. This is accomplished by implementing efficient quadrature rules and analytical integration for overlapping elements in which the integral kernel is singular. Thus, discretized superposition integrals are computed using a nonuniform grid interpolation method, which evaluates the field from N sources at N collocated observers in O(N) operations. This approach allows handling objects of arbitrary shape, allows easily calculating of the field outside the magnetized domains, does not require solving a linear system of equations, and requires little memory. FastMag is implemented on GPUs with ?\\&gt;GPU–central processing unit speed-ups of 2 orders of magnitude. Simulations are shown of a large array of magnetic dots and a recording head fully discretized down to the exchange length, with over a hundred million tetrahedral elements on an inexpensive desktop computer.}",
+    issn = {0021-8979},
+    doi = {10.1063/1.3563081},
+    url = {https://doi.org/10.1063/1.3563081},
+    eprint = {https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/1.3563081/16748870/07d358\_1\_online.pdf},
+}
+
+@article{NUFFT,
+    author = {Livshitz, Boris and Boag, Amir and Bertram, H. Neal and Lomakin, Vitaliy},
+    title = "{Nonuniform grid algorithm for fast calculation of magnetostatic interactions in micromagnetics}",
+    journal = {Journal of Applied Physics},
+    volume = {105},
+    number = {7},
+    pages = {07D541},
+    year = {2009},
+    month = {03},
+    abstract = "{A nonuniform grid (NG) algorithm for rapidly computing magnetostatic field for micromagnetic simulations is described. The algorithm relies on spatial NG representation of the potential from the source boxes and local interpolation. Multilevel implementations of the algorithm result in a linear computational complexity with respect to the number of effective magnetic charges and observers. The algorithm is highly adaptive with respect to structure’s geometry, i.e., it becomes automatically faster for low dimensional configurations such as quasiplanar bit patterned medium arrays.}",
+    issn = {0021-8979},
+    doi = {10.1063/1.3076048},
+    url = {https://doi.org/10.1063/1.3076048},
+    eprint = {https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/1.3076048/15588974/07d541\_1\_online.pdf},
+}
+
+
+@ARTICLE{FPIP,
+  author={Li, Shaojing and Van Orden, Derek A. and Lomakin, Vitaliy},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Fast Periodic Interpolation Method for Periodic Unit Cell Problems}, 
+  year={2010},
+  volume={58},
+  number={12},
+  pages={4005-4014},
+  doi={10.1109/TAP.2010.2078480}}
+
+@article{LGF,
+doi = {10.1088/0953-8984/12/21/304},
+url = {https://dx.doi.org/10.1088/0953-8984/12/21/304},
+year = {2000},
+month = {may},
+publisher = {},
+volume = {12},
+number = {21},
+pages = {4575},
+author = {Simon L Marshall},
+title = {A periodic Green function for calculation of coloumbic lattice
+potentials},
+journal = {Journal of Physics: Condensed Matter},
+abstract = {The modified Green function appropriate for solution of interior boundary value problems of Laplace's equation in a three-dimensional rectangular parallelepiped, subject to periodic boundary conditions, is developed. This allows the determination of the potential due to an arbitrary continuous charge distribution and its periodic replications in three dimensions. Summation of the eigenfunction expansion by application of the Poisson-Jacobi formula gives a Ewald sum, while application of the Poisson summation formula results in a two-dimensional potential that is perturbed by a rapidly converging Fourier cosine series involving K0 Bessel functions. The latter constitutes a generalization of formulae described by Lekner. Numerical results show that the K0 expansion is more rapidly convergent than the Ewald sum, and could therefore substantially reduce the computational effort involved in the molecular simulation of ionic and polar fluids. The Green function is also shown to be related to the asymptotic behaviour of lattice sums for the screened Coulomb potential, in the limit as the screening constant tends to zero.}
+}
+
+@article{molecule,
+author = {Hu, Zhonghan},
+title = {Infinite Boundary Terms of Ewald Sums and Pairwise Interactions for Electrostatics in Bulk and at Interfaces},
+journal = {Journal of Chemical Theory and Computation},
+volume = {10},
+number = {12},
+pages = {5254-5264},
+year = {2014},
+doi = {10.1021/ct500704m},
+    note ={PMID: 26583209},
+
+URL = { 
+        https://doi.org/10.1021/ct500704m
+    
+},
+eprint = { 
+        https://doi.org/10.1021/ct500704m
+    
+}
+
+}
+
+@ARTICLE{Derek,
+  author={Van Orden, Derek and Lomakin, Vitaliy},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Rapidly Convergent Representations for 2D and 3D Green's Functions for a Linear Periodic Array of Dipole Sources}, 
+  year={2009},
+  volume={57},
+  number={7},
+  pages={1973-1984},
+  doi={10.1109/TAP.2009.2021893}}
+
+
+@Article{fdtd,
+author={Bruckner, Florian
+and Ducevic, Amil
+and Heistracher, Paul
+and Abert, Claas
+and Suess, Dieter},
+title={Strayfield calculation for micromagnetic simulations using true periodic boundary conditions},
+journal={Scientific Reports},
+year={2021},
+month={Apr},
+day={28},
+volume={11},
+number={1},
+pages={9202},
+abstract={We present methods for calculating the strayfield in finite element and finite difference micromagnetic simulations using true periodic boundary conditions. In contrast to pseudo periodic boundary conditions, which are widely used in micromagnetic codes, the presented methods eliminate the shape anisotropy originating from the outer boundary. This is a crucial feature when studying the influence of the microstructure on the performance of composite materials, which is demonstrated by hysteresis calculations of soft magnetic structures that are operated in a closed magnetic loop configuration. The applied differential formulation is perfectly suited for the application of true periodic boundary conditions. The finite difference equations can be solved by a highly efficient Fast Fourier Transform method.},
+issn={2045-2322},
+doi={10.1038/s41598-021-88541-9},
+url={https://doi.org/10.1038/s41598-021-88541-9}
+}
+
+@book{mailloux2017phased,
+  title={Phased array antenna handbook},
+  author={Mailloux, Robert J},
+  year={2017},
+  publisher={Artech house}
+}
+
+@article{kalkstein1971green,
+  title={A Green's function theory of surface states},
+  author={Kalkstein, David and Soven, Paul},
+  journal={Surface Science},
+  volume={26},
+  number={1},
+  pages={85--99},
+  year={1971},
+  publisher={Elsevier}
+}
+
+@article{sirenko2010modern,
+  title={Modern theory of gratings},
+  author={Sirenko, Yuriy K and Strom, S},
+  journal={Resonant Scattering: Analysis Techniques and Phenomena},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{peng1975theory,
+  title={Theory of periodic dielect waveguides},
+  author={Peng, ST and Tamir, Theodor and Bertoni, Henry L},
+  journal={IEEE transactions on microwave theory and techniques},
+  volume={23},
+  number={1},
+  pages={123--133},
+  year={1975},
+  publisher={IEEE}
+}
+
+@article{coifman1993fast,
+  title={The fast multipole method for the wave equation: A pedestrian prescription},
+  author={Coifman, Ronald and Rokhlin, Vladimir and Wandzura, Stephen},
+  journal={IEEE Antennas and Propagation magazine},
+  volume={35},
+  number={3},
+  pages={7--12},
+  year={1993},
+  publisher={IEEE}
+}
+
+@article{darve2000fast,
+  title={The fast multipole method: numerical implementation},
+  author={Darve, Eric},
+  journal={Journal of Computational Physics},
+  volume={160},
+  number={1},
+  pages={195--240},
+  year={2000},
+  publisher={Elsevier}
+}
+
+@article{hackbusch2000sparse,
+  title={A sparse H-matrix arithmetic. Part II: application to multi-dimensional problems},
+  author={Hackbusch, Wolfgang and Khoromskij, Boris N},
+  journal={Computing},
+  volume={64},
+  pages={21--47},
+  year={2000},
+  publisher={Springer}
+}
+
+
+
+@ARTICLE{7770011,
+  author={Bleszynski, E. and Bleszynski, M. and Jaroszewicz, T.},
+  journal={Radio Science}, 
+  title={AIM: Adaptive integral method for solving large-scale electromagnetic scattering and radiation problems}, 
+  year={1996},
+  volume={31},
+  number={5},
+  pages={1225-1251},
+  doi={10.1029/96RS02504}}
+
+@ARTICLE{6348120,
+  author={Li, Shaojing and Chang, Ruinan and Boag, Amir and Lomakin, Vitaliy},
+  journal={IEEE Antennas and Propagation Magazine}, 
+  title={Fast Electromagnetic Integral-Equation Solvers on Graphics Processing Units}, 
+  year={2012},
+  volume={54},
+  number={5},
+  pages={71-87},
+  doi={10.1109/MAP.2012.6348120}}
+
+@ARTICLE{662670,
+  author={Phillips, J.R. and White, J.K.},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
+  title={A precorrected-FFT method for electrostatic analysis of complicated 3-D structures}, 
+  year={1997},
+  volume={16},
+  number={10},
+  pages={1059-1072},
+  doi={10.1109/43.662670}}
+
+@article{Lebecki_2008,
+doi = {10.1088/0022-3727/41/17/175005},
+url = {https://dx.doi.org/10.1088/0022-3727/41/17/175005},
+year = {2008},
+month = {aug},
+publisher = {},
+volume = {41},
+number = {17},
+pages = {175005},
+author = {K M Lebecki and M J Donahue and M W Gutowski},
+title = {Periodic boundary conditions for demagnetization interactions in micromagnetic simulations},
+journal = {Journal of Physics D: Applied Physics},
+abstract = {A new method for the introduction of periodic boundary conditions to the self-magnetostatic (demagnetization) term in micromagnetic simulations is described, using an Ewald-like summation method in real space. The long-range character of the dipolar interactions is included without any distance cut-offs. The accumulated errors are carefully monitored to provide easy control of the quality of the results. This allows the calculations to be either accurate up to floating point limitations or less precise when computational speed requirements dominate. This method is incorporated into a full micromagnetic program, and comparisons are made to analytic results.}
+}
+
+@article{10.1063/1.348954,
+    author = {Bagnérés‐Viallix, A. and Baras, P.},
+    title = "{On a method to calculate the demagnetizing field in a micromagnetic structure}",
+    journal = {Journal of Applied Physics},
+    volume = {69},
+    number = {8},
+    pages = {4599-4601},
+    year = {1991},
+    month = {04},
+    abstract = "{The simultaneous minimization of demagnetizing, exchange, anisotropy, and Zeeman energies in a micromagnetic structure is a difficult problem. The way it has been handled by previous investigators has often involved long running times or full matrices. In this paper, we take the demagnetizing energy into account by calculating the scalar potential φ associated with the demagnetizing field. This involves the calculation of another unknown φ in a problem which already has three unknowns: the components of the magnetization. By using φ, the problem is now uncoupled and the sparsity of the matrices is preserved. The magnetic structures studied here are thin slabs. We want to perform the calculations only on a small part of the slab. Since φ is defined in the whole space, the problem reduces to determining boundary conditions. By assuming that each unknown is periodic within the two directions in the plane of the slab, the domain of the problem reduces to a rectangular cell. The equations given in Ref. 1 are discretized by the finite‐element method and boundary elements are taken on the upper and lower surface to evaluate the scalar potential. This paper will outline the steps of the calculation of φ.}",
+    issn = {0021-8979},
+    doi = {10.1063/1.348954},
+    url = {https://doi.org/10.1063/1.348954},
+    eprint = {https://pubs.aip.org/aip/jap/article-pdf/69/8/4599/8018557/4599\_1\_online.pdf},
+}
+
+@article{stohr2006magnetism,
+  title={Magnetism},
+  author={St{\"o}hr, Joachim and Siegmann, Hans Christoph},
+  journal={Solid-State Sciences. Springer, Berlin, Heidelberg},
+  volume={5},
+  pages={236},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{ali_yilmaz,
+author = {Liu, Chang and Aygün, Kemal and Yılmaz, Ali E.},
+title = {A parallel FFT-accelerated layered-medium integral-equation solver for electronic packages},
+journal = {International Journal of Numerical Modelling: Electronic Networks, Devices and Fields},
+volume = {33},
+number = {2},
+pages = {e2684},
+keywords = {FFT, electronic packages, layered medium, method of moments (MoM), parallel algorithms},
+doi = {https://doi.org/10.1002/jnm.2684},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jnm.2684},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/jnm.2684},
+note = {e2684 JNM-19-0067.R1},
+abstract = {Abstract A parallel iterative layered-medium integral-equation solver is presented for fast and scalable network parameter extraction of electronic packages. The solver, which relies on a 2-D fast Fourier transform (FFT)-based algorithm and a sparse preconditioner to reduce computational complexity, is parallelized using three workload decomposition strategies, including a pencil decomposition that increases the scalability of the computationally dominant FFT-based multiplication stage. A set of increasingly difficult benchmark problems, which require network parameter computations for Ntrace1 to 257 package-scale interconnects, are solved on a petaflop scale computer to quantify the solver's accuracy, efficiency, and scalability. The total serialized computation time is observed to scale asymptotically as . For the largest problem, using ~1.14 million unknowns and 1536 processes, the solver requires a wall-clock time of ~0.05 s per iteration, ~1 minute per excitation, ~9 h per frequency, and ~424 hours to extract the 514-port network parameters at 40 sample frequencies between 1 to 40 GHz.},
+year = {2020}
+}
+
+@article{GREENGARD1987325,
+title = {A fast algorithm for particle simulations},
+journal = {Journal of Computational Physics},
+volume = {73},
+number = {2},
+pages = {325-348},
+year = {1987},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/0021-9991(87)90140-9},
+url = {https://www.sciencedirect.com/science/article/pii/0021999187901409},
+author = {L Greengard and V Rokhlin},
+abstract = {An algorithm is presented for the rapid evaluation of the potential and force fields in systems involving large numbers of particles whose interactions are Coulombic or gravitational in nature. For a system of N particles, an amount of work of the order O(N2) has traditionally been required to evaluate all pairwise interactions, unless some approximation or truncation method is used. The algorithm of the present paper requires an amount of work proportional to N to evaluate all interactions to within roundoff error, making it considerably more practical for large-scale problems encountered in plasma physics, fluid dynamics, molecular dynamics, and celestial mechanics.}
+}
+
+@article{LI20108463,
+title = {Fast evaluation of Helmholtz potential on graphics processing units (GPUs)},
+journal = {Journal of Computational Physics},
+volume = {229},
+number = {22},
+pages = {8463-8483},
+year = {2010},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2010.07.029},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999110004225},
+author = {Shaojing Li and Boris Livshitz and Vitaliy Lomakin},
+keywords = {Graphics processing units (GPUs), Computational electromagnetics, Fast methods, Non-uniform grid interpolation methods, Integral equations},
+abstract = {This paper presents a parallel algorithm implemented on graphics processing units (GPUs) for rapidly evaluating spatial convolutions between the Helmholtz potential and a large-scale source distribution. The algorithm implements a non-uniform grid interpolation method (NGIM), which uses amplitude and phase compensation and spatial interpolation from a sparse grid to compute the field outside a source domain. NGIM reduces the computational time cost of the direct field evaluation at N observers due to N co-located sources from O(N2) to O(N) in the static and low-frequency regimes, to O(NlogN) in the high-frequency regime, and between these costs in the mixed-frequency regime. Memory requirements scale as O(N) in all frequency regimes. Several important differences between CPU and GPU implementations of the NGIM are required to result in optimal performance on respective platforms. In particular, in the CPU implementations all operations, where possible, are pre-computed and stored in memory in a preprocessing stage. This reduces the computational time but significantly increases the memory consumption. In the GPU implementations, where handling memory often is a critical bottle neck, several special memory handling techniques are used to accelerate the computations. A significant latency of the GPU global memory access is hidden by implementing coalesced reading, which requires arranging many array elements in contiguous parts of memory. Contrary to the CPU version, most of the steps in the GPU implementations are executed on-fly and only necessary arrays are kept in memory. This results in significantly reduced memory consumption, increased problem size N that can be handled, and reduced computational time on GPUs. The obtained GPU–CPU speed-up ratios are from 150 to 400 depending on the required accuracy and problem size. The presented method and its CPU and GPU implementations can find important applications in various fields of physics and engineering.}
+}
+
+
+@ARTICLE{1159856,
+  author={Boag, A. and Michielssen, E. and Brandt, A.},
+  journal={IEEE Antennas and Wireless Propagation Letters}, 
+  title={Nonuniform polar grid algorithm for fast field evaluation}, 
+  year={2002},
+  volume={1},
+  number={},
+  pages={142-145},
+  doi={10.1109/LAWP.2002.806762}}
+
+
+@article{MENG20108430,
+title = {A multilevel Cartesian non-uniform grid time domain algorithm},
+journal = {Journal of Computational Physics},
+volume = {229},
+number = {22},
+pages = {8430-8444},
+year = {2010},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2010.07.026},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999110004195},
+author = {Jun Meng and Amir Boag and Vitaliy Lomakin and Eric Michielssen},
+keywords = {Method of moments, Integral equations, Time domain, Fast methods, Fast multipole method, Computational electromagnetics},
+abstract = {A multilevel Cartesian non-uniform grid time domain algorithm (CNGTDA) is introduced to rapidly compute transient wave fields radiated by time dependent three-dimensional source constellations. CNGTDA leverages the observation that transient wave fields generated by temporally bandlimited and spatially confined source constellations can be recovered via interpolation from appropriately delay- and amplitude-compensated field samples. This property is used in conjunction with a multilevel scheme, in which the computational domain is hierarchically decomposed into subdomains with sparse non-uniform grids used to obtain the fields. For both surface and volumetric source distributions, the computational cost of CNGTDA to compute the transient field at Ns observation locations from Ns collocated sources for Nt discrete time instances scales as O(NtNslogNs) and O(NtNslog2Ns) in the low- and high-frequency regimes, respectively. Coupled with marching-on-in-time (MOT) time domain integral equations, CNGTDA can facilitate efficient analysis of large scale time domain electromagnetic and acoustic problems.}
+}
+
+@ARTICLE{6230628,
+  author={Baczewski, Andrew D. and Dault, Daniel L. and Shanker, Balasubramaniam},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Accelerated Cartesian Expansions for the Rapid Solution of Periodic Multiscale Problems}, 
+  year={2012},
+  volume={60},
+  number={9},
+  pages={4281-4290},
+  doi={10.1109/TAP.2012.2207037}}
+
+@article{CAPOLINO2007250,
+title = {Efficient computation of the 3D Green’s function for the Helmholtz operator for a linear array of point sources using the Ewald method},
+journal = {Journal of Computational Physics},
+volume = {223},
+number = {1},
+pages = {250-261},
+year = {2007},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2006.09.013},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999106004359},
+author = {F. Capolino and D.R. Wilton and W.A. Johnson},
+keywords = {Arrays, Series acceleration, Fast methods, Green function, Gratings, Numerical methods, Periodic structures},
+abstract = {The Ewald method is applied to accelerate the evaluation of the Green’s function (GF) of an infinite equispaced linear array of point sources with linear phasing. Only a few terms are needed to evaluate Ewald sums, which are cast in terms of error functions and exponential integrals, to high accuracy. It is shown analytically that the choice of the standard “optimal” Ewald splitting parameter E0 causes overflow errors at high frequencies (period large compared to the wavelength), and convergence rates are analyzed. A recipe for selecting the Ewald splitting parameter is provided.}
+}
+
+@inproceedings{10.1145/3569951.3597559,
+author = {Boerner, Timothy J. and Deems, Stephen and Furlani, Thomas R. and Knuth, Shelley L. and Towns, John},
+title = {ACCESS: Advancing Innovation: NSF’s Advanced Cyberinfrastructure Coordination Ecosystem: Services \& Support},
+year = {2023},
+isbn = {9781450399852},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3569951.3597559},
+doi = {10.1145/3569951.3597559},
+abstract = {As the National Science Foundation evolves its investments in cyberinfrastructure, it has made a significant investment in the ACCESS (Advanced Cyberinfrastructure Coordination Ecosystem: Services \& Support) program instantiating a novel set of services along with a novel governance and management model. Research cyberinfrastructure (CI) is a key catalyst for discovery and innovation and plays a critical role in ensuring U.S. leadership in science and engineering, economic competitiveness, and national security, consistent with NSF’s mission. Funding of a set of awards through the ACCESS program has established a suite of CI coordination services targeted at supporting a broad and diverse set of requirements, researchers, and usage modalities spanning all areas of science and engineering research and education complemented by support for the collective and coordinated operation of the overall ACCESS program.},
+booktitle = {Practice and Experience in Advanced Research Computing},
+pages = {173–176},
+numpages = {4},
+keywords = {Federation, NSF ACCESS, Research Computing, cyberinfrastructure ecosystems},
+location = {Portland, OR, USA},
+series = {PEARC '23}
+}
+
+@article{r1_1,
+title = {A fast method for imposing periodic boundary conditions on arbitrarily-shaped lattices in two dimensions},
+journal = {Journal of Computational Physics},
+volume = {474},
+pages = {111792},
+year = {2023},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2022.111792},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999122008555},
+author = {Ruqi Pei and Travis Askham and Leslie Greengard and Shidong Jiang},
+keywords = {Periodic boundary conditions, Fast multipole method, Plane wave representation, Nonuniform fast Fourier transform, Low rank factorization, Arbitrarily-shaped lattices},
+abstract = {A new scheme is presented for imposing periodic boundary conditions on unit cells with arbitrary source distributions. We restrict our attention here to the Poisson, modified Helmholtz, Stokes and modified Stokes equations. The approach extends to the oscillatory equations of mathematical physics, including the Helmholtz and Maxwell equations, but we will address these in a companion paper, since the nature of the problem is somewhat different and includes the consideration of quasiperiodic boundary conditions and resonances. Unlike lattice sum-based methods, the scheme is insensitive to the unit cell's aspect ratio and is easily coupled to adaptive fast multipole methods (FMMs). Our analysis relies on classical “plane-wave” representations of the fundamental solution, and yields an explicit low-rank representation of the field due to all image sources beyond the first layer of neighboring unit cells. When the aspect ratio of the unit cell is large, our scheme can be coupled with the nonuniform fast Fourier transform (NUFFT) to accelerate the evaluation of the induced field. Its performance is illustrated with several numerical examples.}
+}
+
+
+@ARTICLE{r1_2,
+  title    = "Fast Ewald summation for electrostatic potentials with arbitrary
+              periodicity",
+  author   = "Shamshirgar, D S and Bagge, J and Tornberg, A-K",
+  abstract = "A unified treatment for the fast and spectrally accurate
+              evaluation of electrostatic potentials with periodic boundary
+              conditions in any or none of the three spatial dimensions is
+              presented. Ewald decomposition is used to split the problem into
+              real-space and Fourier-space parts, and the Fast Fourier
+              Transform (FFT)-based Spectral Ewald (SE) method is used to
+              accelerate computation of the latter, yielding the total runtime
+              O(N⁡log(N)) for N sources. A key component is a new FFT-based
+              solution technique for the free-space Poisson problem. The
+              computational cost is further reduced by a new adaptive FFT for
+              the doubly and singly periodic cases, allowing for different
+              local upsampling factors. The SE method is most efficient in the
+              triply periodic case where the cost of computing FFTs is the
+              lowest, whereas the rest of the algorithm is essentially
+              independent of periodicity. We show that removing periodic
+              boundary conditions from one or two directions out of three will
+              only moderately increase the total runtime, and in the free-space
+              case, the runtime is around four times that of the triply
+              periodic case. The Gaussian window function previously used in
+              the SE method is compared with a new piecewise polynomial
+              approximation of the Kaiser-Bessel window, which further reduces
+              the runtime. We present error estimates and a parameter selection
+              scheme for all parameters of the method, including a new estimate
+              for the shape parameter of the Kaiser-Bessel window. Finally, we
+              consider methods for force computation and compare the runtime of
+              the SE method with that of the fast multipole method.",
+  journal  = "J Chem Phys",
+  volume   =  154,
+  number   =  16,
+  pages    = "164109",
+  month    =  apr,
+  year     =  2021,
+  address  = "United States",
+  language = "en"
+}
+
+@ARTICLE{r1_3,
+  title    = "Fast Ewald summation for free-space Stokes potentials",
+  author   = "af Klinteberg, Ludvig and Shamshirgar, Davoud Saffar and
+              Tornberg, Anna-Karin",
+  abstract = "We present a spectrally accurate method for the rapid evaluation
+              of free-space Stokes potentials, i.e., sums involving a large
+              number of free space Green's functions. We consider sums
+              involving stokeslets, stresslets and rotlets that appear in
+              boundary integral methods and potential methods for solving
+              Stokes equations. The method combines the framework of the
+              Spectral Ewald method for periodic problems (Lindbo and Tornberg
+              in J Comput Phys 229(23):8994--9010, 2010.
+              doi:10.1016/j.jcp.2010.08.026), with a very recent approach to
+              solving the free-space harmonic and biharmonic equations using
+              fast Fourier transforms (FFTs) on a uniform grid (Vico et al. in
+              J Comput Phys 323:191--203, 2016. doi:10.1016/j.jcp.2016.07.028).
+              Convolution with a truncated Gaussian function is used to place
+              point sources on a grid. With precomputation of a scalar grid
+              quantity that does not depend on these sources, the amount of
+              oversampling of the grids with Gaussians can be kept at a factor
+              of two, the minimum for aperiodic convolutions by FFTs. The
+              resulting algorithm has a computational complexity of $$O(N
+              \textbackslashlog N)$$for problems with N sources and targets.
+              Comparison is made with a fast multipole method to show that the
+              performance of the new method is competitive.",
+  journal  = "Research in the Mathematical Sciences",
+  volume   =  4,
+  number   =  1,
+  pages    = "1",
+  month    =  feb,
+  year     =  2017
+}
+
+@article{r1_4,
+title = {Fast Ewald summation for Stokes flow with arbitrary periodicity},
+journal = {Journal of Computational Physics},
+volume = {493},
+pages = {112473},
+year = {2023},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2023.112473},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999123005685},
+author = {Joar Bagge and Anna-Karin Tornberg},
+keywords = {Fast summation, Stokes potentials, Creeping flow, Reduced periodicity, Fourier analysis, Boundary integral equations},
+abstract = {A fast and spectrally accurate Ewald summation method for the evaluation of stokeslet, stresslet and rotlet potentials of three-dimensional Stokes flow is presented. This work extends the previously developed Spectral Ewald method for Stokes flow to periodic boundary conditions in any number (three, two, one, or none) of the spatial directions, in a unified framework. The periodic potential is split into a short-range and a long-range part, where the latter is treated in Fourier space using the fast Fourier transform. A crucial component of the method is the modified kernels used to treat singular integration. We derive new modified kernels, and new improved truncation error estimates for the stokeslet and stresslet. An automated procedure for selecting parameters based on a given error tolerance is designed and tested. Analytical formulas for validation in the doubly and singly periodic cases are presented. We show that the computational time of the method scales like O(Nlog⁡N) for N sources and targets, and investigate how the time depends on the error tolerance and window function, i.e. the function used to smoothly spread irregular point data to a uniform grid. The method is fastest in the fully periodic case, while the run time in the free-space case is around three times as large. Furthermore, the highest efficiency is reached when applying the method to a uniform source distribution in a primary cell with low aspect ratio. The work presented in this paper enables efficient and accurate simulations of three-dimensional Stokes flow with arbitrary periodicity using e.g. boundary integral and potential methods.}
+}
+
+@article{PhysRevB.71.235117,
+  title = {Enhanced transmission through metallic plates perforated by arrays of subwavelength holes  and sandwiched between dielectric slabs},
+  author = {Lomakin, Vitaliy and Michielssen, Eric},
+  journal = {Phys. Rev. B},
+  volume = {71},
+  issue = {23},
+  pages = {235117},
+  numpages = {10},
+  year = {2005},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.71.235117},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.71.235117}
+}
+
+@ARTICLE{4232642,
+  author={Lomakin, Vitaliy and Michielssen, Eric},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Beam Transmission Through Periodic Subwavelength Hole Structures}, 
+  year={2007},
+  volume={55},
+  number={6},
+  pages={1564-1581},
+  keywords={Periodic structures;Optical surface waves;Optical arrays;Structural beams;Surface waves;Corrugated surfaces;Resonance;Probes;Microwave antennas;Optical waveguides;Perforated plates, transmission;periodic array;scattering, asymptotic},
+  doi={10.1109/TAP.2007.897305}}
+
+@article{Hessel:65,
+author = {A. Hessel and A. A. Oliner},
+journal = {Appl. Opt.},
+keywords = {Diffraction gratings; Evanescent waves; Metal gratings; Multiple scattering; Q factor; Surface waves},
+number = {10},
+pages = {1275--1297},
+publisher = {Optica Publishing Group},
+title = {A New Theory of Wood's Anomalies on Optical Gratings},
+volume = {4},
+month = {Oct},
+year = {1965},
+url = {https://opg.optica.org/ao/abstract.cfm?URI=ao-4-10-1275},
+doi = {10.1364/AO.4.001275},
+abstract = {A new theory of Wood's anomalies is presented which is based on a guided wave approach rather than the customary multiple scattering procedure. This approach provides both new insight and a method of calculation. It is shown that two distinct types of anomalies may exist: a Rayleigh wavelength type due to the emergence of a new spectal order at grazing angle, and a resonance type which is related to the guided complex waves supportable by the grating. A general theoretical treatment is presented which makes use of a surface reactance to take into account the standing waves in the grating grooves, and which derives the locations and detailed shapes of the anomalies. Rigorous results are obtained for a specific example; the amplitudes of all of the spectral orders are determined explicitly, and the Wood's anomaly effects are demonstrated clearly in graphical form for a variety of cases.},
+}
+
+@ARTICLE{6059491,
+  author={Van Orden, Derek and Lomakin, Vitaliy},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Rapidly Convergent Representations for Periodic Green's Functions of a Linear Array in Layered Media}, 
+  year={2012},
+  volume={60},
+  number={2},
+  pages={870-879},
+  keywords={Arrays;Green's function methods;Surface waves;Periodic structures;Reflection;Three dimensional displays;Diffraction;Computational Electromagnetics;gratings;Green's function methods;periodic structures;surface structures},
+  doi={10.1109/TAP.2011.2173125}}
+
+@ARTICLE{5582244,
+  author={Li, Shaojing and Van Orden, Derek A. and Lomakin, Vitaliy},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Fast Periodic Interpolation Method for Periodic Unit Cell Problems}, 
+  year={2010},
+  volume={58},
+  number={12},
+  pages={4005-4014},
+  keywords={Interpolation;Observers;Green's function methods;Computational efficiency;Three dimensional displays;Periodic structures;Fast methods;frequency selective surfaces;Green's functions;integral equations;periodic structures},
+  doi={10.1109/TAP.2010.2078480}}
+
+@ARTICLE{4907048,
+  author={Van Orden, Derek and Lomakin, Vitaliy},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Rapidly Convergent Representations for 2D and 3D Green's Functions for a Linear Periodic Array of Dipole Sources}, 
+  year={2009},
+  volume={57},
+  number={7},
+  pages={1973-1984},
+  keywords={Green's function methods;Convergence;Integral equations;Periodic structures;Quantum computing;Linear antenna arrays;Microwave antenna arrays;Optical arrays;Optical waveguides;Acceleration;Antenna arrays;Green's functions;integral equations;linear arrays;periodic structures},
+  doi={10.1109/TAP.2009.2021893}}
+
+@ARTICLE{558669,
+  author={Weng Cho Chew and Jian-Ming Jin and Cai-Cheng Lu and Michielssen, E. and Song, J.M.},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Fast solution methods in electromagnetics}, 
+  year={1997},
+  volume={45},
+  number={3},
+  pages={533-543},
+  keywords={Integral equations;Computational complexity;Electromagnetic scattering;Differential equations;Sparse matrices;Radar scattering;Electromagnetic propagation;Aircraft;Application software;Antennas and propagation},
+  doi={10.1109/8.558669}}
+
+@Article{Barnett2011,
+author={Barnett, Alex
+and Greengard, Leslie},
+title={A new integral representation for quasi-periodic scattering problems in two dimensions},
+journal={BIT Numerical Mathematics},
+year={2011},
+month={Mar},
+day={01},
+volume={51},
+number={1},
+pages={67-90},
+abstract={Boundary integral equations are an important class of methods for acoustic and electromagnetic scattering from periodic arrays of obstacles. For piecewise homogeneous materials, they discretize the interface alone and can achieve high order accuracy in complicated geometries. They also satisfy the radiation condition for the scattered field, avoiding the need for artificial boundary conditions on a truncated computational domain. By using the quasi-periodic Green's function, appropriate boundary conditions are automatically satisfied on the boundary of the unit cell. There are two drawbacks to this approach: (i) the quasi-periodic Green's function diverges for parameter families known as Wood's anomalies, even though the scattering problem remains well-posed, and (ii) the lattice sum representation of the quasi-periodic Green's function converges in a disc, becoming unwieldy when obstacles have high aspect ratio.},
+issn={1572-9125},
+doi={10.1007/s10543-010-0297-x},
+url={https://doi.org/10.1007/s10543-010-0297-x}
+}
+
+
+@ARTICLE{1603823,
+  author={Lomakin, V. and Michielssen, E.},
+  journal={IEEE Transactions on Antennas and Propagation}, 
+  title={Transmission of transient plane waves through perfect electrically conducting plates perforated by periodic arrays of subwavelength holes}, 
+  year={2006},
+  volume={54},
+  number={3},
+  pages={970-984},
+  keywords={Frequency domain analysis;Delay;Wideband;Transient response;Dielectrics;Slabs;Fourier transforms;Resonance;Optical scattering;Rayleigh scattering},
+  doi={10.1109/TAP.2006.869896}}
